@@ -1,0 +1,131 @@
+img {
+	max-width: 100%;
+}
+
+.tiles {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.tile {
+	max-width: 520px;
+	padding-left: 60px;
+}
+
+.tile-image {
+	display: block;
+	max-width: 80%;
+	overflow: hidden;
+	position: relative;
+}
+.tile-image img {
+	display: block;
+	transition: transform 2.4s ease;
+}
+.tile-image::after {
+	content: '';
+	display: block;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.tile-link {
+	color: #111;
+	display: block;
+}
+.tile-link:hover .title-wrap {
+	transform: translateX(0);
+}
+.tile-link:hover .tile-image img {
+	transform: scale(1.05);
+}
+.tile-link:hover .title-main::after {
+	transform: scaleX(1);
+}
+.tile-link:hover .tile-image::after {
+	opacity: 1;
+}
+
+figure {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.title-wrap {
+	background: rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	padding: 1em;
+	margin-top: -2.25em;
+	vertical-align: top;
+	max-width: calc(100% - 60px);
+	transform: translateX(-60px);
+	transition: transform 0.3s ease;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+}
+
+.title-sub {
+	display: inline-block;
+	margin: 0 0 0.5em 0;
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.15em;
+}
+
+.title-main {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	line-height: 1.2;
+	font-size: 15px;
+	color: #fff;
+	opacity: 0.7;
+}
+.title-main::after {
+	background: #f2bd1d;
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100px;
+	margin: 0.5em 0 0 0;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition: transform 0.6s ease;
+}
+
+.tile-body {
+	font-size: 16px;
+	line-height: 1.5;
+	max-width: 75%;
+	color: #fff;
+}
+
+.tile-link {
+	color: #444;
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 1em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.tile-link svg {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.5em;
+	transform: translateY(-0.1em);
+}
