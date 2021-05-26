@@ -1,0 +1,38 @@
+.sidebar {
+	min-height: 100vh;
+
+	color: #fff;
+}
+.sidebar h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 16px 0 5px 16px;
+}
+
+.resources {
+	color: #fff !important;
+}
+.content {
+	padding: 3em 1em 1em 2em;
+	border-left: 0.5px solid #ddd;
+}
+.editor {
+	padding: 3em 1em 1em 2em;
+}
+.content > *,
+.editor > * {
+	color: #fff;
+}
+
+.content h2,
+.editor h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+.content h3,
+.editor h3 {
+	font-size: 18px;
+	font-weight: 600;
+}

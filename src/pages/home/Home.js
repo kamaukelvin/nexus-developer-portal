@@ -6,6 +6,7 @@ import EnvCard from 'components/envCard/EnvCard';
 import Uat from 'assets/images/uat.jpg';
 import dev from 'assets/images/dev.jpg';
 import prod from 'assets/images/prod.jpg';
+import Button from 'components/button/Button';
 
 const Home = () => {
 	const environments = [
@@ -40,7 +41,7 @@ const Home = () => {
 						Welcome to the <br />
 						Nexus development portal
 					</h1>
-					<button class={styles.heroButton}>Learn More</button>
+					<Button text="Learn More" />
 				</div>
 			</div>
 			<div className="container">
@@ -60,10 +61,12 @@ const Home = () => {
 					<div class={styles.sectionHeading}>
 						<h2>Available Modules</h2>
 					</div>
-					<p>
+					<p className="text-white px-5">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat
+						laboris nisi ut aliquip ex ea commodo consequatsed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat
 					</p>
 					<div className="row">
 						<div className="col-md-3 offset-md-1">

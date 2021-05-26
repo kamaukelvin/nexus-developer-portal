@@ -5,3 +5,35 @@
 section {
 	margin: 3em 0;
 }
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+	color: #fff !important;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.ant-collapse-content {
+	color: #fff !important;
+
+	padding-left: 24px;
+}
+.ant-collapse-content > .ant-collapse-content-box {
+	padding: 0 0 0 24px !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow,
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+	padding-top: 6px !important;
+	padding-bottom: 6px !important;
+}
+.ant-divider-horizontal {
+	margin: 20px 0 !important;
+}
+.ant-divider {
+	border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.table {
+	color: #ededed !important;
+}
+.table > thead {
+	background: #666464 !important;
+	color: #fff !important;
+}

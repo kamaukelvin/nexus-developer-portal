@@ -1,0 +1,12 @@
+.search {
+	color: #fff;
+	background-color: transparent !important;
+	border: 1px solid #ced4da;
+	border-radius: 7px !important;
+}
+.searchWrapper {
+	margin: 14px 6px;
+}
+.iconWrapper {
+	border-radius: 0 7px 7px 0 !important;
+}

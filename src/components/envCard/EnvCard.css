@@ -64,7 +64,7 @@ figure {
 .title-wrap {
 	background: rgba(255, 255, 255, 0.1);
 	display: inline-block;
-	padding: 1em;
+	padding: 0.5em;
 	margin-top: -2.25em;
 	vertical-align: top;
 	max-width: calc(100% - 60px);
@@ -113,6 +113,7 @@ figure {
 	line-height: 1.5;
 	max-width: 75%;
 	color: #fff;
+	padding-top: 0.7em;
 }
 
 .tile-link {

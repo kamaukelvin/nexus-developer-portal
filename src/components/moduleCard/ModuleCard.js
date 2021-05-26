@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ModuleCard.module.css';
+import { Link } from 'react-router-dom';
 
 const ModuleCard = ({ title, number }) => {
 	return (
@@ -12,7 +13,7 @@ const ModuleCard = ({ title, number }) => {
 					recusandae consequuntur itaque quaerat illo rem necessitatibus unde vitae dolorem, nemo nihil fuga.
 					Fugit corrupti assumenda consequuntur!
 				</p>
-				<a href>View API</a>
+				<Link to="/module">View API</Link>
 			</div>
 		</div>
 	);
