@@ -3,16 +3,12 @@ import ModulePage from './ModulePage';
 import sampleResponse from './data.json';
 
 const ModuleLogic = () => {
-	const [code, setCode] = useState({
+	const [code] = useState({
 		resource: 'quotations',
 		action: 'list',
 		data: {},
 	});
-	const [response, setResponse] = useState({
-		resource: 'quotations',
-		action: 'list',
-		data: {},
-	});
+
 	return (
 		<div>
 			<ModulePage code={code} response={sampleResponse} />
